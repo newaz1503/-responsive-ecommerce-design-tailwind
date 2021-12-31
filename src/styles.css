@@ -1,0 +1,27 @@
+/*Custom font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base{
+    body{
+        @apply font-poppins;
+    }
+    h1, h2, h3, h4{
+        @apply font-openSans;
+    }
+    .placeholder-tetx{
+        @apply text-sm;
+    }
+}
+@layer components{
+    .size-selector input:checked + label{
+        @apply bg-primary text-white;
+    }
+    .color-selector > input:checked + label{
+        @apply ring-2 ring-offset-2 ring-offset-gray-500;
+    }
+
+}

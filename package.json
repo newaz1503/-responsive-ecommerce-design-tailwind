@@ -1,0 +1,21 @@
+{
+  "name": "ecommerce-tailwind-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/styles.css -o public/output.css -w "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "postcss-cli": "^9.0.2"
+  }
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <!--===Header Section====-->
+    <header class="bg-white py-3 shadow-sm">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="font-semibold text-md"><span class="text-primary text-xl font-black">E</span>commerce</a>
+            <div class="w-full max-w-xl relative flex">
+                <i class="fas fa-search absolute top-3.5 left-3 text-md"></i>
+                <input type="text" placeholder="Search" class="w-full border-2 border-primary pl-12 pr-3 py-2 focus:outline-none focus:border-2 focus:border-pink-400 rounded-l-md placeholder-tetx">
+                <button class="bg-primary border border-primary px-8 py-3 rounded-r-sm text-white text-xs font-semibold hover:bg-transparent hover:text-primary transition duration-500">Search</button>
+            </div>
+            <div class="flex items-center text-center space-x-4 text-md">
+                <a href="wishlist.html" class="relative group">
+                    <div class="flex flex-col">
+                        <i class="far fa-heart text-sm"></i>
+                        <p class="text-xs text-gray-400 font-normal block mt-1 group-hover:text-primary">Wishlist</p>
+                    </div>
+                    <span class="flex items-center justify-center bg-primary text-white w-4 h-4 text-xs rounded-full absolute -top-1.5 right-1">2</span>
+                </a>
+                <a href="#" class="relative group">
+                    <div class="flex flex-col">
+                        <i class="fas fa-shopping-bag"></i>
+                        <p class="text-xs text-gray-400 font-normal block mt-1 group-hover:text-primary">Cart</p>
+                    </div>
+                    <span class="flex items-center justify-center bg-primary text-white text-xs w-4 h-4 rounded-full absolute -top-1.5 -right-1">3</span>
+                </a>
+                <a href="account.html" class="group">
+                    <div class="flex flex-col">
+                        <i class="far fa-user"></i>
+                        <p class="text-xs text-gray-400 font-normal block mt-1 group-hover:text-primary">Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--===Header Section end====-->
+
+    <!--===Navbar Section====-->
+    <nav class="bg-gray-800">
+        <div class="container flex items-center text-white font-medium text-sm space-x-6">
+            <!-- category -->
+            <div class="relative text-xs px-8 py-4 bg-primary cursor-pointer hover:bg-transparent hover:text-primary group">
+                <i class="fas fa-bars"></i>
+                <span class="uppercase">All Categories</span>
+                <!-- dropdown mwnu -->
+                <div class="absolute left-0 top-full bg-white shadow-md w-full divide-y divide-gray-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-500">
+                    <a href="#" class="flex items-center space-x-4 px-4 py-2.5 text-gray-500 hover:bg-gray-100">
+                        <i class="fas fa-chair text-primary"></i>
+                        <span>Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-4 px-4 py-2.5 text-gray-600 hover:bg-gray-100">
+                        <i class="fas fa-bed text-primary"></i>
+                        <span>Bedroom</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-4 px-4 py-2.5 text-gray-600 hover:bg-gray-100">
+                        <i class="fas fa-bath text-primary"></i>
+                        <span>Office</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-4 px-4 py-2.5 text-gray-600 hover:bg-gray-100">
+                        <i class="fas fa-blackboard text-primary"></i>
+                        <span>Outdoor</span>
+                    </a>
+                </div>
+            </div>
+            <!-- category end-->
+            <!-- menu -->
+            <div class="flex items-center justify-between flex-grow text-xs font-poppins">
+                <div class="flex transition">
+                    <a href="index.html" class="py-4 px-4 block hover:bg-primary cursor-pointer">Home</a>
+                    <a href="" class="py-4 px-4 block hover:bg-primary cursor-pointer">About Us</a>
+                    <a href="shop.html" class="py-4 px-4 block hover:bg-primary cursor-pointer">Shop</a>
+                    <a href="" class="py-4 px-4 block hover:bg-primary cursor-pointer">Contact</a>
+                </div>
+                <div class="hover:text-primary transition">
+                    <a href="login.html">Login/Register</a>
+                </div>
+                
+            </div>
+            <!-- menu end-->
+        </div>
+    </nav>
+    <!--===Navbar Section end====-->
+
+    <!--===Account section====-->
+    <div class="container grid grid-cols-12 gap-8 pt-4 pb-16 place-items-start">
+        <!-- sidebar -->
+        <div class="col-span-3">
+            <!-- profile -->
+            <div class="flex space-x-2 shadow p-4 w-full">
+                <img src="./images/profile.jpg" alt="Profile Image" class="w-12 h-12 rounded-full flex-shrink-0 object-cover">
+                <div class="font-openSans flex-grow">
+                    <h2 class="text-md text-gray-700 font-bold">Newaz Sharif</h2>
+                    <p class="text-xs text-gray-500">newaz123@gmail.com</p>
+                </div>
+            </div>
+            <!-- profile -->
+
+            <!-- profile links -->
+            <div class="mt-6 bg-white divide-y divide-gray-200 shadow p-4 space-y-4">
+                <!-- single link -->
+                <div class="space-y-2 text-gray-700 text-sm pl-8">
+                    <a href="account.html" class="text-primary relative block font-semibold">
+                        <span class="absolute -left-8 top-0">
+                            <i class="fas fa-address-card"></i>
+                        </span>
+                        <span>Manage Account</span>
+                    </a>
+                    <a href="profile-info.html" class="block hover:text-primary">
+                        <span>Profile Info</span>
+                    </a>
+                    <a href="#" class="block hover:text-primary">
+                        <span>Manage address</span>
+                    </a>
+                    <a href="#" class="block hover:text-primary">
+                        <span>Change password</span>
+                    </a>
+                </div> 
+                <!-- single link -->   
+                <!-- single link -->
+                <div class="space-y-2 text-gray-700 text-sm pl-8 pt-4">
+                    <a href="#" class="relative block font-semibold">
+                        <span class="absolute -left-8 top-0">
+                            <i class="fas fa-gift"></i>
+                        </span>
+                        <span>My Order History</span>
+                    </a>
+                    <a href="#" class="block hover:text-primary">
+                        <span>My Returns</span>
+                    </a>
+                    <a href="#" class="block hover:text-primary">
+                        <span>My Cancellations</span>
+                    </a>
+                    <a href="#" class="block hover:text-primary">
+                        <span>My Reviews</span>
+                    </a>
+                </div> 
+                <!-- single link -->   
+                <!-- single link -->
+                <div class="space-y-2 text-gray-700 text-sm pl-8 pt-4">
+                    <a href="#" class="relative block font-semibold">
+                        <span class="absolute -left-8 top-0">
+                            <i class="fas fa-dolly-box"></i>
+                        </span>
+                        <span>Payment Methods</span>
+                    </a>
+                    <a href="#" class="block hover:text-primary">
+                        <span>Voucher</span>
+                    </a>
+                </div> 
+                <!-- single link -->  
+                <!-- single link -->
+                <div class="space-y-2 text-gray-700 text-sm pl-8 pt-4">
+                    <a href="wishlist.html" class="relative block font-semibold hover:text-primary">
+                        <span class="absolute -left-8 top-0">
+                            <i class="far fa-heart"></i>
+                        </span>
+                        <span>My Wishlist</span>
+                    </a>
+                </div> 
+                <!-- single link -->  
+                 <!-- single link -->
+                 <div class="space-y-2 text-gray-700 text-sm pl-8 pt-4">
+                    <a href="#" class="relative block font-semibold hover:text-primary">
+                        <span class="absolute -left-8 top-0">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </span>
+                        <span>Logout</span>
+                    </a>
+                </div> 
+                <!-- single link --> 
+            </div>
+             <!-- profile links end-->
+        </div>
+        <!-- sidebar -->
+
+        <!-- Profile info -->
+        <div class="col-span-9 mt-8">
+            <div class="shadow px-4 pt-8 pb-12 font-openSans">
+                <h3 class="text-gray-800 text-lg font-semibold mb-4">Profile Information</h3>
+                <form action="">
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="FirstName" class="text-gray-600 text-sm font-semibold mb-1 block">First Name</label>
+                            <input type="text" value="John" class="w-full text-gray-500 border text-md py-2 px-4 placeholder-gray-600 rounded focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="LastName" class="text-gray-600 text-sm font-semibold mb-1 block">Last Name</label>
+                            <input type="text" value="Doe" class="w-full text-gray-500 border text-md py-2 px-4 placeholder-gray-600 rounded focus:outline-none focus:border-primary">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="EmailAddress" class="text-gray-600 text-sm font-semibold mb-1 block">Email Address</label>
+                            <input type="email" value="John@gmail.com" class="w-full text-gray-500 border text-md py-2 px-4 placeholder-gray-600 rounded focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="LastName" class="text-gray-600 text-sm font-semibold mb-1 block">Phone Number</label>
+                            <input type="tel" value="+8801700000000" class="w-full text-gray-500 border text-md py-2 px-4 placeholder-gray-600 rounded focus:outline-none focus:border-primary">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="Birth" class="text-gray-600 text-sm font-semibold mb-1 block">Birthday</label>
+                            <input type="date" class="w-full text-gray-500 border text-md py-2 px-4 placeholder-gray-600 rounded focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="Gender" class="text-gray-600 text-sm font-semibold mb-1 block">Gender</label>
+                            <select class="w-full text-gray-500 border text-md py-2 px-4 placeholder-gray-600 rounded focus:outline-none focus:border-primary">
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                                <option value="female">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="bg-primary py-2 px-6 text-white text-sm font-semibold hover:bg-opacity-90 mt-4 inline-block">Save Change</button>
+                </form>
+            </div>
+        </div>
+        <!-- Profile info -->
+
+
+    </div>
+    <!--===Account section end====-->
+
+    <!--===Footer section====-->
+    <footer class="pt-8 pb-10 border-t border-gray-200 bg-white">
+        <div class="container grid grid-cols-3 gap-8 font-openSans">
+            <!-- footer text  -->
+            <div class="col-span-1">
+                <a href="#" class="w-30 text-gray-800 text-md font-semibold">Logo</a>
+                <p class="text-xs text-gray-500 font-normal my-4 leading-normal">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Adipisci, iure! </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-md text-primary hover:text-gray-600">
+                        <i class="fab fa-facebook-f"></i>   
+                    </a>
+                    <a href="#" class="text-md text-primary hover:text-gray-600">
+                        <i class="fab fa-twitter"></i>   
+                    </a>
+                    <a href="#" class="text-md text-primary hover:text-gray-600">
+                        <i class="fab fa-youtube"></i>   
+                    </a>
+                    <a href="#" class="text-md text-primary hover:text-gray-600">
+                        <i class="fab fa-instagram"></i>   
+                    </a>
+                </div>
+            </div>
+            <!-- footer links-->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-gray-800 text-sm font-semibold mb-3">Solutions</h3>
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Marketing</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Analytics</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Commerce</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-800 text-sm font-semibold mb-3">Support</h3>
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Pricing</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Documentation</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Guides</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">API Status</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-gray-800 text-sm font-semibold mb-3">Solutions</h3>
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Marketing</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Analytics</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Commerce</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-800 text-sm font-semibold mb-3">Support</h3>
+                        <div class="flex flex-col space-y-2">
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Pricing</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Documentation</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">Guides</a>
+                            <a href="#" class="text-gray-500 text-xs font-medium hover:text-gray-800">API Status</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--===Footer section end====-->
+
+    <!--===Copyright section====-->
+    <div class="container bg-gray-800 px-8 py-4 mt-6 mb-0.5">
+        <div class="flex justify-between items-center">
+            <p class="text-xs text-gray-400">&copy; Cpyright - All Right Reserved</p>
+            <div>
+                <img src="./images/payment.png" alt="Paymeny Method" class="h-6">
+            </div>
+        </div>
+    </div>
+    <!--===Copyright section end====-->
+
+</body>
+
+</html>
